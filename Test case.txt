@@ -1,0 +1,78 @@
+Smoke
+
+Log in as admin and create a new student
+Log in as a student, search and reserve a book
+Log in as a person who works at the library and enter the new book, end of student book reservation
+Check or records appear in DB
+ 
+
+
+Functional
+
+Check or entered values(knygos, biblioteka, fakultetas, studentas, studento_paimtos_knygos) appears to DB
+Check entered values validation (length, special characters, numbers instead of letters and verses)
+Check or reserved book could be taken by another student
+Check or student can find a book via author/name (in general or search is working)
+Check or student can reserve the book in past time (validation)
+Check or student will get a reminder about taken/return the book 
+Check or student can take a book with other LSP_id (validation)
+Check or student can take a book from other faculty
+Check or exist validation of how many books the student can take
+Check or users have their own permissions and can access data, edit, update
+
+developers will add unit test
+
+
+Non-functional 
+
+generate big data to DB and check how fast info(book, student) is returned (performance)
+check when the same time many students try to log in, reserve the same book
+check request response time
+test system with beta testers and collect feedback about the system
+check or current system meets business requirements
+check or all fields are visible and accessible for end-user in FE
+
+
+
+
+Regression 
+
+
+Log in to the system where can enter data
+Create student with name, surname, fak_id, lsp_id
+Check or student with LSP can take the book from the library
+Check fields validations
+
+
+-------
+log in as a student
+find a book and reserve it
+check or book gone from the list and marked as reserved in FE, DB
+check or user will get a reminder of time left/taken book
+
+----------
+log in as a person who works in the library
+add a new book to list and assign to the faculty
+mark book as available +DB status
+
+-------------------------
+log in as a person who works in the library
+mark book as returned +DB status
+
+
+------------------------
+login as admin 
+create new faculty and fill all data
+
+------------------------
+
+check performance and load results
+
+
+
+
+
+
+
+
+
